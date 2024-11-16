@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcancia Digital</title>
+    <script src="https://kit.fontawesome.com/ba52fcc0fa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" type="image/ico" href="../static/img/favicon.ico"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" style="font-size: 35px;display: flex;align-items: center;text-decoration: none;color: #cb89c9;font-weight: 700;">
+            <img src="../static/img/favicon.ico" alt="" height="40px" width="40px" style="margin-right: 5px;">
+            Alcancia
+        </a>
+    </header>
+    <main class="main_index">
+        <div class="contenedor_saldo_index">
+            <div class="contenedor_dinero_ind">
+                <div class="contenedor_saldo_ind">
+                    <p>Saldo: <span class="txt_saldo_ind">$<span id="lblSaldo">0.00</span></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_acciones">
+            <div class="btn_acciones boton_ingreso" onclick="location.href='/ingresos'">
+                <p>INGRESO</p>
+            </div>
+            <div class="btn_acciones boton_consulta">
+                <p>CONSULTA</p>
+            </div>
+            <div class="btn_acciones boton_retiro" onclick="location.href='/retiros'">
+                <p>RETIRO</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&#169;Creado por Alejandro Moreira</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="/static/scripts/index.js"></script>
+</body>
+</html>
